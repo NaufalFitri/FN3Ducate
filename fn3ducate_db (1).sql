@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 21, 2024 at 05:33 PM
+-- Generation Time: Apr 22, 2024 at 04:41 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -20,6 +20,19 @@ SET time_zone = "+00:00";
 --
 -- Database: `fn3ducate_db`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `allocation_db`
+--
+
+CREATE TABLE `allocation_db` (
+  `Allocation_ID` int(11) NOT NULL,
+  `Tutor_ID` varchar(6) NOT NULL,
+  `Timeslot_Code` varchar(4) NOT NULL,
+  `Type` varchar(10) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -109,6 +122,12 @@ CREATE TABLE `tutor_db` (
 --
 
 --
+-- Indexes for table `allocation_db`
+--
+ALTER TABLE `allocation_db`
+  ADD PRIMARY KEY (`Allocation_ID`);
+
+--
 -- Indexes for table `booking_db`
 --
 ALTER TABLE `booking_db`
@@ -153,6 +172,12 @@ ALTER TABLE `tutor_db`
 --
 -- AUTO_INCREMENT for dumped tables
 --
+
+--
+-- AUTO_INCREMENT for table `allocation_db`
+--
+ALTER TABLE `allocation_db`
+  MODIFY `Allocation_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=100;
 
 --
 -- AUTO_INCREMENT for table `booking_db`
