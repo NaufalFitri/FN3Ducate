@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 22, 2024 at 04:41 AM
+-- Generation Time: Apr 23, 2024 at 05:53 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -45,7 +45,8 @@ CREATE TABLE `booking_db` (
   `Student_ID` varchar(6) NOT NULL,
   `Tutor_ID` varchar(6) NOT NULL,
   `Level_Code` varchar(3) NOT NULL,
-  `Timeslot_Code` varchar(4) NOT NULL
+  `Allocation_ID` int(11) DEFAULT NULL,
+  `Subject_ID` varchar(5) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
@@ -58,6 +59,14 @@ CREATE TABLE `level_db` (
   `Level_Code` varchar(3) NOT NULL,
   `Student_Level` varchar(7) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `level_db`
+--
+
+INSERT INTO `level_db` (`Level_Code`, `Student_Level`) VALUES
+('L01', 'Form 4'),
+('L02', 'Form 5');
 
 -- --------------------------------------------------------
 
@@ -82,6 +91,19 @@ CREATE TABLE `student_db` (
   `Student_Name` varchar(50) DEFAULT NULL,
   `Password_Stud` varchar(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `student_db`
+--
+
+INSERT INTO `student_db` (`Student_ID`, `Level_Code`, `Student_Name`, `Password_Stud`) VALUES
+('ID0001', 'L01', 'Afiq Aiman ', 'abc123'),
+('ID0002', 'L02', 'Abdul Naufal Fitri', 'def456'),
+('ID0003', 'L01', 'Nariesya Auni', 'abc112'),
+('ID0004', 'L02', 'Aina Alesha', 'abc234'),
+('ID0005', 'L02', 'Karl Xavier', 'abc445'),
+('ID0006', 'L02', 'Imann Shaizmy', 'def334'),
+('ID0007', 'L02', 'Iman Nur Batrisyia', 'abc223');
 
 -- --------------------------------------------------------
 
@@ -125,13 +147,20 @@ CREATE TABLE `tutor_db` (
 -- Indexes for table `allocation_db`
 --
 ALTER TABLE `allocation_db`
-  ADD PRIMARY KEY (`Allocation_ID`);
+  ADD PRIMARY KEY (`Allocation_ID`),
+  ADD KEY `allocation_tutor` (`Tutor_ID`),
+  ADD KEY `allocation_timeslot` (`Timeslot_Code`);
 
 --
 -- Indexes for table `booking_db`
 --
 ALTER TABLE `booking_db`
-  ADD PRIMARY KEY (`Booking_ID`);
+  ADD PRIMARY KEY (`Booking_ID`),
+  ADD KEY `booking_tutor` (`Tutor_ID`),
+  ADD KEY `booking_student` (`Student_ID`),
+  ADD KEY `booking_level` (`Level_Code`),
+  ADD KEY `booking_allocation` (`Allocation_ID`),
+  ADD KEY `booking_subject` (`Subject_ID`);
 
 --
 -- Indexes for table `level_db`
@@ -149,7 +178,8 @@ ALTER TABLE `phone_tutordb`
 -- Indexes for table `student_db`
 --
 ALTER TABLE `student_db`
-  ADD PRIMARY KEY (`Student_ID`);
+  ADD PRIMARY KEY (`Student_ID`),
+  ADD KEY `student_level` (`Level_Code`);
 
 --
 -- Indexes for table `subject_db`
@@ -167,7 +197,8 @@ ALTER TABLE `timeslot_db`
 -- Indexes for table `tutor_db`
 --
 ALTER TABLE `tutor_db`
-  ADD PRIMARY KEY (`Tutor_ID`);
+  ADD PRIMARY KEY (`Tutor_ID`),
+  ADD KEY `tutor_phone` (`Tutor_Phone`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -184,6 +215,39 @@ ALTER TABLE `allocation_db`
 --
 ALTER TABLE `booking_db`
   MODIFY `Booking_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=100;
+
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `allocation_db`
+--
+ALTER TABLE `allocation_db`
+  ADD CONSTRAINT `allocation_timeslot` FOREIGN KEY (`Timeslot_Code`) REFERENCES `timeslot_db` (`Timeslot_Code`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `allocation_tutor` FOREIGN KEY (`Tutor_ID`) REFERENCES `tutor_db` (`Tutor_ID`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+--
+-- Constraints for table `booking_db`
+--
+ALTER TABLE `booking_db`
+  ADD CONSTRAINT `booking_allocation` FOREIGN KEY (`Allocation_ID`) REFERENCES `allocation_db` (`Allocation_ID`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `booking_level` FOREIGN KEY (`Level_Code`) REFERENCES `level_db` (`Level_Code`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `booking_student` FOREIGN KEY (`Student_ID`) REFERENCES `student_db` (`Student_ID`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `booking_subject` FOREIGN KEY (`Subject_ID`) REFERENCES `subject_db` (`Subject_ID`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `booking_tutor` FOREIGN KEY (`Tutor_ID`) REFERENCES `tutor_db` (`Tutor_ID`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+--
+-- Constraints for table `student_db`
+--
+ALTER TABLE `student_db`
+  ADD CONSTRAINT `student_level` FOREIGN KEY (`Level_Code`) REFERENCES `level_db` (`Level_Code`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+--
+-- Constraints for table `tutor_db`
+--
+ALTER TABLE `tutor_db`
+  ADD CONSTRAINT `tutor_phone` FOREIGN KEY (`Tutor_Phone`) REFERENCES `phone_tutordb` (`Tutor_Phone`) ON DELETE CASCADE ON UPDATE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
