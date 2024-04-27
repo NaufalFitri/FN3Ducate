@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+title {
+    display: none;
+}
+
+* {
+    background-color: rgb(210, 210, 210);
+}
+
+
+
+main {
+    gap: 5vh;
+    justify-content: flex-start;
+    height: 100vh;
+    margin: 70px 50px;
+    font-family: "Outfit", sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.welcome{
+    background-color: white;
+}
+
+.container {
+    display: flex;
+    padding: 20px 20px;
+    background-color: white;
+    border-radius: 20px;
+    flex-direction: row;
+    box-shadow: -2px 2px 2px 2px rgb(158, 157, 157);
+    align-self: center;
+}
+
+.container svg {
+    width: 30vh;
+    height: 30vh;
+    justify-self: center;
+}
+
+.container h1{
+    font-size: 32px;
+}
+
+.container p {
+    margin: -10px 0 0 0;
+    font-size: 30px;
+}
+
+.container section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.date {
+    background-color: white;
+    display: flex;
+    align-self: flex-start;
+    margin-right: -10vh;
+    margin-top: -15px;
+    translate: -10vh;
+    color: blue;
+    font-size: 25px;
+}
+
+.class {
+    display: flex;
+    flex-direction: column;
+    align-self:center;
+    font-size: 30px;
+    font-weight: 500;
+    gap: 30px
+}
+
+.class nav {
+    align-items: center;
+    justify-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.class svg {
+    width: 100px;
+    height: 100px;
+}

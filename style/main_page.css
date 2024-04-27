@@ -1,91 +1,57 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
-
-title {
-    display: none;
-}
-
-* {
-    background-color: rgb(210, 210, 210);
-}
-
-
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Outfit:wght@100..900&display=swap');
 
 main {
-    gap: 5vh;
-    justify-content: flex-start;
-    height: 100vh;
-    margin: 70px 50px;
-    font-family: "Outfit", sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 5vh;
+    gap: 10px;
+}
+
+section.main_page {
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    flex-direction: row;
+    border: solid;
+}
+
+section.main_page .welcome img {
+    width: 50vh;
+    margin: -100px 0px -130px -25px;
+    filter: drop-shadow(-1px 4px 5px #9a9a9a);
+}
+
+
+section.main_page .laptop {
+    width: 50vh;
+    height: 50vh;
+}
+
+section.achivements {
     border: solid;
     display: flex;
-    flex-direction: column;
-}
-
-.container .welcome{
-    background-color: white;
-}
-
-.container {
-    display: flex;
-    padding: 20px 20px;
-    background-color: white;
-    border-radius: 20px;
-    flex-direction: row;
-    box-shadow: -2px 2px 2px 2px rgb(158, 157, 157);
-    align-self: center;
-}
-
-.container svg {
-    width: 30vh;
-    height: 30vh;
-    justify-self: center;
-}
-
-.container h1{
-    font-size: 32px;
-}
-
-.container p {
-    margin: -10px 0 0 0;
-    font-size: 30px;
-}
-
-.container section {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
-    margin-bottom: 20px;
+    align-content: center;
 }
 
-.date {
-    background-color: white;
+section.achivements div {
     display: flex;
-    align-self: flex-start;
-    margin-right: -10vh;
-    margin-top: -15px;
-    translate: -10vh;
-    color: blue;
-    font-size: 25px;
-}
-
-.class {
-    display: flex;
-    flex-direction: column;
-    align-self:center;
-    font-size: 30px;
-    font-weight: 500;
-    gap: 30px
-}
-
-.class nav {
-    align-items: center;
-    justify-items: center;
-    display: flex;
+    border: solid;
+    width: 80vh;
+    height: 110px;
+    border-radius: 15px;
+    align-content: center;
+    justify-content: center;
+    padding: 0px 30px;
+    gap: 50px;
+    font-family: 'Lato', sans-serif;
     flex-wrap: wrap;
-    gap: 30px;
 }
 
-.class svg {
-    width: 100px;
-    height: 100px;
+section.achivements div h1:not(.last){
+    border-right: solid;
+    padding: 0px 30px
+}
+
+section.achivements span {
+    font-size: 20px;
 }
