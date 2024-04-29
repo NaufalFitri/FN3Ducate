@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Jost:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+.menu1{
+    position:absolute;
+width:30px;
+height: auto;
+left: 42px;
+top: 8px;
+background-color: white;
+}
+
+.meet{
+    font-family:"Lato",sans-serif;
+    position:absolute;
+    background:transparent;
+    top:80px;
+    left:5%;
+    font-size:30px;
+    font-weight:800;
+}
+
+.pick{
+    font-family:"Lato",sans-serif;
+    position:absolute;
+    background:transparent;
+    top:150px;
+    left:5%;
+    font-size:30px;
+    font-weight:400;
+}
+
+.bhs{
+    cursor:pointer;
+}
+.put1{
+position: absolute;
+width: 200px;
+height:200px;
+left: 215px;
+top: 251px;
+border-radius:100%;
+background: #FFFFFF;
+border:none;
+}
+
+.bm2{
+    position:absolute;
+    width:22%;
+    left: 175px;
+top:211px;
+}
+
+.fiz{
+    cursor:pointer;
+}
+
+.put2{
+    position: absolute;
+    width: 200px;
+    height:200px;
+    left: 555px;
+    top: 251px;
+    border-radius:100%;
+    background: #FFFFFF;
+    border:none;
+}
+
+.fiz2{
+    position:absolute;
+    width:12%;
+    left: 574px;
+top:271px;
+}
+
+.bioo{
+    cursor:pointer;
+}
+
+.put3{
+    position: absolute;
+    width: 200px;
+    height:200px;
+    left: 895px;
+    top: 251px;
+    border-radius:100%;
+    background: #FFFFFF;
+    border:none;
+}
+
+.bioo2{
+    position:absolute;
+    width:12%;
+    left: 920px;
+top:271px;
+}
+
+.kim{
+    cursor:pointer;
+}
+
+.put4{
+    position: absolute;
+    width: 200px;
+    height:200px;
+    left: 370px;
+    top: 551px;
+    border-radius:100%;
+    background: #FFFFFF;
+    border:none;
+}
+
+.kimi{
+    position:absolute;
+    width:16%;
+    left: 370px;
+top:551px;
+}
+
+.bi{
+    cursor:pointer;
+}
+
+.put5{
+    position: absolute;
+    width: 200px;
+    height:200px;
+    left: 770px;
+    top: 551px;
+    border-radius:100%;
+    background: #FFFFFF;
+    border:none;
+}
+
+.bii{
+    position:absolute;
+    width:16%;
+    left: 770px;
+top:551px;
+}

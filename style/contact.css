@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+title {
+  display: none;
+}
+
+main {
+  gap: 5vh;
+  justify-content: flex-start;
+  height: 100vh;
+  margin: 70px 50px;
+  font-family: "Outfit", sans-serif;
+  border: solid;
+  display: flex; /* Make the main container a flex container */
+  flex-direction: column; /* Arrange elements vertically */
+}
+
+* {
+  background-color: rgb(210, 210, 210);
+}
+
+.h1 p {
+  left: 20px;
+}
+
+.date {
+  font-size: 24px; /* Adjust font size as needed */
+  color: #354AB6; /* Adjust color as needed */
+  /* Move to top using margin */
+  margin-top: -45px; /* Adjust top position from the edge */
+  /* Move to right using auto margins */
+  margin-left: 1020px; /* Push element to the right */
+}
+
+.circles {
+  display: flex;
+  flex-wrap: wrap;
+  /* Move below the date using margin-top */
+  margin-top: 20px; /* Adjust spacing between date and circles */
+}
+
+.circle {
+  width: 100px; /* Adjusted width for smaller circles */
+  height: 100px; /* Maintains aspect ratio */
+  border-radius: 50%;
+  margin: 50px; /* Adjust spacing as needed */
+  position: relative; /* Needed for text positioning */;
+  top: 95px;
+  left: 240px;
+}
+
+.circle img {
+  width: 100px; /* Ensures image scales down */
+  height: 110px; /* Allows proportional height adjustment */
+  object-fit: contain;
+  background-color: transparent;
+  margin-left: 1px;
+}
+
+.circle p, .circle a {
+  position: relative; /* Position text elements inside circle */
+  bottom: -1px; /* Adjust text position from bottom */
+  text-align: center;
+  color: black; /* Adjust text color */
+  background-color: transparent;
+}
+
+.circle a { /* Style the link for the third circle */
+  bottom: -20px;
+  text-decoration: none; /* Remove underline */
+  color: blue; /* Adjust link color */
+}
