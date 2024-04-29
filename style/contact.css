@@ -44,8 +44,7 @@ main {
   height: 100px; /* Maintains aspect ratio */
   border-radius: 50%;
   margin: 50px; /* Adjust spacing as needed */
-  position: relative; /* Needed for text positioning */
-  border: 1px solid red;
+  position: relative; /* Needed for text positioning */;
   top: 95px;
   left: 240px;
 }
