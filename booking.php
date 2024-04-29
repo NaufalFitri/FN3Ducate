@@ -1,7 +1,7 @@
 <?php
     include("connection.php");
     include("top_page.php");
-    
+    session_start();
     if(isset($_POST["submit"])){
         $student_id = mysqli_real_escape_string($connection, $_POST["Student_ID"]);
         $tutor_id = mysqli_real_escape_string($connection, $_POST["Tutor_ID"]);
