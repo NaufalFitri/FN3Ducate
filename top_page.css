@@ -5,7 +5,7 @@ title {
 }
 
 * {
-    background-color: #d2d5da ;   
+    background-color: #EBECF0 ;   
 }   
 
 body {
@@ -16,7 +16,7 @@ body {
 .main {
     margin: 0;
     font-family: "Outfit", sans-serif;
-    background-color: white;
+    background-color: #f5f5f5;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -37,7 +37,7 @@ body {
 }
 
 a.active{
-    color: blue;
+    color: black;
 }
 
 section.btn {

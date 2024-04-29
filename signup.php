@@ -1,5 +1,6 @@
 <?php
 	include("connection.php");
+	include("top_page_singup.php");
 	
 	if(isset($_POST["submit"])){
 		$student_id = $_POST["Student_ID"];
@@ -19,40 +20,42 @@
 	}
 ?>
 
-<link rel = "stylesheet" href = "forms.css">
+
+<link rel = "stylesheet" href = "style/forms.css">
 <link rel = "stylesheet" href = "main.css">
 <link rel = "stylesheet" href = "buttons.css">
-<h3 class = "head"> Student Sign-Up: </h3>
-<form class = "simple" action = "signup.php" method = "post">
-	<table>
-		<tr>
-			<td> Student ID: </td>
-			<td> <input required type = "text" name = "Student_ID"> </td>
-		</tr>
-		
-		<tr>
-			<td> Student Name: </td>
-			<td> <input required type = "text" name = "Student_Name"> </td>
-		</tr>
-		
-		<tr>
-			<td> Level: </td>
-			<td> <select name = "Level_Code">
-				<?php
-					$sql = "select * from level_db";
-					$data = mysqli_query($connection, $sql);
-					while ($code = mysqli_fetch_array($data)){
-						echo "<option value = '$code[Level_Code]'> $code[Student_Level] </option>";
-					}
-				?>
-			</td>
-		</tr>
-		<tr>
-			<td> Password: </td>
-			<td> <input required type = "text" name = "Password_Stud"> </td>
-		</tr>
-	</table>
-	<button class = 'Add' type = 'submit' name = "submit"> Register! </button>
-</form>
-<br>
+<section class="form">
+	<form class = "simple" action = "signup.php" method = "post">
+		<h1>Student Registeration</h1>
+		<table>
+			<tr>
+				<td class="text">Student ID</td>
+				<td> <input required type = "text" name = "Student_ID" placeholder="Username or Email"> </td>
+			</tr>
+			<tr>
+				<td class="text">Student Name</td>
+				<td> <input required type = "text" name = "Student_Name" placeholder="Your name"> </td>
+			</tr>
+			
+			<tr>
+				<td class="text"> Level: </td>
+				<td> <select name = "Level_Code" >
+					<?php
+						$sql = "select * from level_db";
+						$data = mysqli_query($connection, $sql);
+						while ($code = mysqli_fetch_array($data)){
+							echo "<option value = '$code[Level_Code]'> $code[Student_Level] </option>";
+						}
+					?>
+				</td>
+			</tr>
+			<tr>
+				<td class="text"> Password: </td>
+				<td> <input required type = "text" name = "Password_Stud" placeholder="Password"> </td>
+			</tr>
+		</table>
+		<button class = 'Add' type = 'submit' name = "submit"> Register </button>
+	</form>
+	<br>
+</section>
 
