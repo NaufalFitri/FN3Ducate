@@ -4,13 +4,11 @@ title {
     display: none;
 }
 
-* {
-    background-color: #EBECF0 ;   
-}   
 
 body {
     margin: 0;
     padding: 0;
+    background-color: #EBECF0
 }
 
 .main {
@@ -62,7 +60,7 @@ section.btn {
 
 
 .top_page {
-    padding: 0px 30px;
+    padding: 0px 40px;
 }
 
 .logo {
