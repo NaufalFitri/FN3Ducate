@@ -18,4 +18,13 @@
             </nav>
     </section>
 </header>
-</html>
+</html
+
+
+
+
+
+git pull 
+git add . 
+git commit -m "...."
+git push  
