@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Outfit:wght@100..900&display=swap');
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+  
+.container {
+    width:100%;
+    height:auto;
+}
+
+.container img {
+    width:100%;
+    height:auto;
+    object-fit:cover;
+}
+
+.container .title1 {
+    position:absolute;
+    font-family: "Outfit", sans-serif;
+    color: white;
+    text-align: center;
+    top:15%;
+    left:50%;
+    z-index:2;
+    transform:translateX(-50%);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    padding:10px;
+    font-size:200%;
+}
+
+.How {
+    text-align: center;
+    font-family: "Outfit", sans-serif;
+    color:#354AB6;
+    padding:20px;
+    font-size:200%;
+}
+
+.background-image1 {
+    position:absolute;
+    width:35%;
+
+}
+
+.overlay-image {
+    display:block;
+    position:absolute;
+    top:500px;
+    left:70px;
+    z-index:1;
+    width:20%;
+    filter:drop-shadow(2px 3px 4px rgba(0, 0, 0, 0.7));
+}
+
+.overlay-image2{
+    position:absolute;
+    z-index: 1;
+    width:15%;
+    top:375px;
+    left:4px;
+}
+.overlay-image2 {
+    position:absolute;
+    width:10%
+    z-index=1;
+}
+
+.content {
+    position:relative;
+    font-family: "Outfit", sans-serif;
+    text-align:center;
+    color:#7077D7;
+    font-size:270%;
+    font-weight:600;
+    z-index:1;
+}
+
+.hijau {
+    right:50%;
+    width:6%;
+}
+
+.bintik {
+    position: absolute;
+    width:20%;
+    left:59%;
+    top:400px;
+    z-index:1;
+    filter:drop-shadow(0px 3px 4px rgba(0, 0, 0, 0.5));
+}
+
+.gradhijau {
+    position:absolute;
+    width:35%;
+    left:33%;
+    top:400px;
+}
+
+.arrow{
+    position:absolute;
+    width:20%;
+    left:41%;
+    top:700px;
+}
+
+.words1{
+    position:relative;
+    font-family:"Istok Web",sans-serif;
+    z-index:3;
+    top:5px;
+    left:35%;
+    width:350px;
+    text-align:center;
+    font-size: 170%;
+    font-weight:200;
+    color:#5F6271;
+}
+
+.gradpink{
+    position:absolute;
+    width:35%;
+    left:53%;
+    top:640px;
+    z-index:2;
+}
+
+.words2{
+    position:relative;
+    font-family:"Istok Web",sans-serif;
+    z-index:3;
+    top:50px;
+    left:55%;
+    width:400px;
+    text-align:center;
+    font-size: 170%;
+    font-weight:200;
+    color:#5F6271;
+}
+
+.k1{
+    position:absolute;
+    width:10%;
+    left:4%;
+}
+
+.k2{
+    position:absolute;
+    width:5%;
+    left:1%;
+    top:1150px;
+}
+
+.k3{
+    position:absolute;
+    width:8%;
+    left:15%;
+    top:1140px;
+}
