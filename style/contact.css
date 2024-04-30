@@ -19,8 +19,8 @@ main {
   background-color: rgb(210, 210, 210);
 }
 
-.h1 p {
-  left: 20px;
+.h1 {
+  font-size: 100px;
 }
 
 .date {
@@ -40,14 +40,20 @@ main {
 }
 
 .circle {
-  width: 100px; /* Adjusted width for smaller circles */
-  height: 100px; /* Maintains aspect ratio */
-  border-radius: 50%;
+  width: 160px; /* Adjusted width for smaller circles */
+  height: 160px; /* Maintains aspect ratio */
   margin: 50px; /* Adjust spacing as needed */
-  position: relative; /* Needed for text positioning */
-  border: 1px solid red;
+  position: relative; /* Needed for text positioning */;
   top: 95px;
-  left: 240px;
+  left: 190px;
+}
+
+.circle img:first-child {  /* Target the first image only */
+  width: 190px; /* Increase width for first image */
+  height: 100px; /* Maintain aspect ratio */
+  object-fit: contain;
+  background-color: transparent;
+  margin-left: 10px;
 }
 
 .circle img {
@@ -60,14 +66,16 @@ main {
 
 .circle p, .circle a {
   position: relative; /* Position text elements inside circle */
-  bottom: -1px; /* Adjust text position from bottom */
   text-align: center;
   color: black; /* Adjust text color */
   background-color: transparent;
+  transform: translateY(-50%); /* Vertically center text */
+  margin-left: 45px;
 }
 
 .circle a { /* Style the link for the third circle */
-  bottom: -20px;
+  margin-left: 60px;
+  top: 10px;
   text-decoration: none; /* Remove underline */
   color: blue; /* Adjust link color */
 }

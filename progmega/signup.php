@@ -1,6 +1,5 @@
 <?php
 	include("connection.php");
-	include("top_page.php");
 	
 	if(isset($_POST["submit"])){
 		$student_id = $_POST["Student_ID"];
@@ -12,7 +11,7 @@
 		$result = mysqli_query($connection, $sql);
 		
 		if ($result == TRUE){
-			echo "<br><center> Welcome to the FN3ducate family! Please make your slot bookings in the 'Booking' page. </center>";
+			echo "<br><center> Student successfullly registered into FN3ducate! </center>";
 		}
 		else {
 			echo "<br><center> Error Occured! $sql <br> ".mysqli_error($connection)." </center>";
@@ -23,19 +22,17 @@
 <link rel = "stylesheet" href = "forms.css">
 <link rel = "stylesheet" href = "main.css">
 <link rel = "stylesheet" href = "buttons.css">
-<center>
-<section class = "form">
+<h3 class = "head"> Student Sign-Up: </h3>
 <form class = "simple" action = "signup.php" method = "post">
-	<h1> Student Sign-Up: </h1>
 	<table>
 		<tr>
 			<td> Student ID: </td>
-			<td> <input required type = "text" name = "Student_ID" placeholder = "6-character username"> </td>
+			<td> <input required type = "text" name = "Student_ID"> </td>
 		</tr>
 		
 		<tr>
 			<td> Student Name: </td>
-			<td> <input required type = "text" name = "Student_Name" placeholder = "Full Name"> </td>
+			<td> <input required type = "text" name = "Student_Name"> </td>
 		</tr>
 		
 		<tr>
@@ -52,12 +49,10 @@
 		</tr>
 		<tr>
 			<td> Password: </td>
-			<td> <input required type = "text" name = "Password_Stud" placeholder = "10-character password"> </td>
+			<td> <input required type = "text" name = "Password_Stud"> </td>
 		</tr>
 	</table>
 	<button class = 'Add' type = 'submit' name = "submit"> Register! </button>
 </form>
-</section>
 <br>
-</center>
 

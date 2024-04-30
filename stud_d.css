@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family:"Outfit",sans-serif;
+}
+
+.menu1{
+    position:absolute;
+width:30px;
+height: auto;
+left: 42px;
+top: 8px;
+background-color: white;
+}
+
+.bgpu1{
+position: absolute;
+width: 804px;
+height: 234px;
+left: 25px;
+top: 146px;
+
+background: #FFFFFF;
+border-radius: 20px;
+
+}
+
+.hello{
+    position:absolute;
+    background-color: transparent;
+    top:200px;
+    left:7%;
+    z-index:1;
+    font-family:"Jost",sans-serif;
+    font-size:45px;
+}
+
+.lesson{
+    position:absolute;
+    background:transparent;
+    top:280px;
+    left:7%;
+    font-size:30px;
+    font-weight:200;
+    font-family:"Jost",sans-serif;
+}
+
+.ppl1{
+    position:absolute;
+    background:transparent;
+    top:140px;
+    left:42%;
+    width:20%;
+}
+
+.ppl2{
+    position:absolute;
+    background:transparent;
+    z-index:1;
+    width:3%;
+    left: 1216px;
+top: 145px;
+}
+
+.bgpu2{
+position: absolute;
+width: 355px;
+height: 35px;
+left: 850px;
+top: 150px;
+
+background: #FFFFFF;
+border-radius: 25px;
+}
+
+.bulat1{
+position: absolute;
+width: 50px;
+height: 50px;
+left: 1210px;
+top: 142px;
+
+background: #FFFFFF;
+border-radius: 100px;
+}
+
+.glass{
+    position: absolute;
+width:3%;
+height:auto;
+left: 852px;
+top: 152px;
+z-index:1;
+}
+
+.search{
+    font-family:"Jost",sans-serif;
+    position:absolute;
+    left: 900px;
+    top: 154px;
+    font-size:20px;
+    font-weight:200;
+
+}
+
+.bgpu3{
+position: absolute;
+width: 297px;
+height: 163px;
+left: 850px;
+top: 202px;
+
+background: #FBFBFB;
+border-radius: 20px;
+}
+
+.five{
+    position: absolute;
+    font-family:"Jost",sans-serif;
+    left: 870px;
+top: 202px;
+font-weight:900;
+font-size:130px;
+}
+
+.subj{
+    position: absolute;
+    font-family:"Jost",sans-serif;
+    left: 970px;
+top: 232px;
+font-weight:600;
+font-size:40px;
+width:200px;
+}
+
+.subj1{
+    position: absolute;
+    font-family:"Jost",sans-serif;
+    left: 30px;
+top: 422px;
+font-weight:550;
+font-size:40px;
+width:400px;
+}
+
+.all{
+    position:absolute;
+    z-index:1;
+    font-family:"Jost",sans-serif;
+    border:none;
+    background:transparent;
+    cursor:pointer;
+    font-size:25px;
+    font-weight:400;
+    left: 56px;
+    top: 482px;
+}
+
+.schdl{
+    position:absolute;
+    z-index:1;
+    font-family:"Jost",sans-serif;
+    border:none;
+    background:transparent;
+    cursor:pointer;
+    font-size:25px;
+    font-weight:400;
+    left: 250px;
+    top: 482px;
+    opacity:0.5;
+}
+
+.noti{
+    position:absolute;
+    z-index:1;
+    font-family:"Jost",sans-serif;
+    border:none;
+    background:transparent;
+    cursor:pointer;
+    font-size:25px;
+    font-weight:400;
+    left: 430px;
+    top: 482px;
+    opacity:0.5;
+}
+
+.bm{
+    position:absolute;
+    width:55%;
+    left: 24px;
+    top: 542px;
+    filter:drop-shadow(0px 3px 4px rgba(0, 0, 0, 0.5));
+}
+
+.buku{
+    position:absolute;
+    width:14%;
+    left: 1px;
+    top: 505px;
+}
+
+.chem{
+    position:absolute;
+    width:55%;
+    left: 24px;
+    top: 732px;
+    filter:drop-shadow(0px 3px 4px rgba(0, 0, 0, 0.5));
+}
+
+.atom{
+    position:absolute;
+    width:6%;
+    left: 40px;
+    top: 742px;
+}
+
+.bio{
+    position:absolute;
+    width:55%;
+    left: 24px;
+    top: 922px;
+    filter:drop-shadow(0px 3px 4px rgba(0, 0, 0, 0.5));
+}
+
+.plant{
+    position:absolute;
+    width:6%;
+    left: 40px;
+    top: 933px;
+}
+
+.eng{
+    position:absolute;
+    width:55%;
+    left: 24px;
+    top: 1112px;
+    filter:drop-shadow(0px 3px 4px rgba(0, 0, 0, 0.5));
+}
+
+.engl{
+    position:absolute;
+    width:9.7%;
+    left: 19px;
+    top: 1105px;
+}
+
+.bgpu4{
+position: absolute;
+width: 499px;
+height: 219px;
+left: 750px;
+top: 537px;
+
+background: #FFFFFF;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 25px;
+}
+
+.clb{
+    position:absolute;
+    z-index:1;
+    font-family:"Jost",sans-serif;
+    border:none;
+    background:transparent;
+    cursor:pointer;
+    font-size:30px;
+    font-weight:600;
+    left: 72%;
+    top: 482px;
+}
+
+.learn{
+position: absolute;
+width: 324px;
+height: 58px;
+left: 63%;
+top: 559px;
+
+font-family: 'Jost';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 58px;
+/* identical to box height */
+text-align: center;
+
+background: linear-gradient(180deg, #94B6FA 0%, #AD82D8 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+}
+
+.now{
+    /* Book your class now! */
+
+position: absolute;
+width: 322px;
+height: 36px;
+left: 59.5%;
+top: 622px;
+
+font-family: 'Jost';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 36px;
+text-align: center;
+
+background: linear-gradient(180deg, #94B6FA 0%, #AD82D8 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+}
+
+/* Rectangle 60 */
+.now2{
+position: absolute;
+width: 201px;
+height: 51px;
+left: 909px;
+top: 689px;
+
+background: linear-gradient(90deg, #F6CACA 0%, #FCD9FF 100%);
+border-radius: 20px;
+cursor:pointer;
+font-family:"Jost",sans-serif;
+border:none;
+color:white;
+font-size:25px;
+}
+
+.ass{
+    position:absolute;
+    z-index:1;
+    font-family:"Jost",sans-serif;
+    border:none;
+    background:transparent;
+    cursor:pointer;
+    font-size:30px;
+    font-weight:600;
+    left: 72%;
+    top: 822px;
+}
+
+.bgpu5{
+position: absolute;
+width: 499px;
+height: 201px;
+left: 750px;
+top: 879px;
+
+background: #FFFFFF;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 25px;
+}
+
+.pensel{
+    position: absolute;
+    width:3%;
+    left: 1189px;
+    top: 889px;
+    z-index:2;
+}
+
+.pi{
+position: absolute;
+width: 28px;
+height: 28px;
+left: 902px;
+top: 963px;
+
+background: #D0F9E1;
+border-radius: 4px;
+z-index:4;
+}
