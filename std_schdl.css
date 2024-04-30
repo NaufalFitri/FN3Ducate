@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+.schdl{
+    font-family:"Lato",sans-serif;
+    position:absolute;
+    background:transparent;
+    top:50px;
+    left:5%;
+    font-size:35px;
+    font-weight:800;
+}
+
+.clas{
+    font-family:"Lato",sans-serif;
+    position:absolute;
+    background:transparent;
+    top:130px;
+    left:5%;
+    font-size:20px;
+    font-weight:400;
+    opacity:0.7;
+}
+
+.per{
+    font-family:"Lato",sans-serif;
+    position:absolute;
+    background:transparent;
+    top:130px;
+    left:14%;
+    font-size:20px;
+    font-weight:400;
+    color:#071E98;
+}
+
+/* Rectangle 47 */
+
+.sess1{
+    cursor:pointer;
+    border:transparent;
+}
+.biru1{
+    /* Rectangle 47 */
+
+position: absolute;
+width: 900px;
+height: 128px;
+left: 142px;
+top: 233px;
+
+background: #354AB6;
+border-radius: 0px 30px 30px 30px;
+
+}
+
+.putt1{
+position: absolute;
+width: 920px;
+height: 124px;
+left: 162px;
+top: 244px;
+
+background: #FFFFFF;
+border: 1px solid #000000;
+border-radius: 0px 30px 30px 30px;
+
+}
+
+.noti1{
+    position: absolute;
+    width:5%;
+    left:984px;
+    top:270px;
+}
+
+.sess2{
+    cursor:pointer;
+    border:transparent;
+}
+.biru2{
+    /* Rectangle 47 */
+
+position: absolute;
+width: 900px;
+height: 128px;
+left: 142px;
+top: 433px;
+
+background: #354AB6;
+border-radius: 0px 30px 30px 30px;
+
+}
+
+.putt2{
+position: absolute;
+width: 920px;
+height: 124px;
+left: 162px;
+top: 444px;
+
+background: #FFFFFF;
+border: 1px solid #000000;
+border-radius: 0px 30px 30px 30px;
+
+}
+
+.noti2{
+    position: absolute;
+    width:5%;
+    left:984px;
+    top:470px;
+}
+
+.sess3{
+    cursor:pointer;
+    border:transparent;
+}
+.biru3{
+    /* Rectangle 47 */
+position: absolute;
+width: 900px;
+height: 128px;
+left: 142px;
+top: 633px;
+
+background: #354AB6;
+border-radius: 0px 30px 30px 30px;
+
+}
+
+.putt3{
+position: absolute;
+width: 920px;
+height: 124px;
+left: 162px;
+top: 644px;
+
+background: #FFFFFF;
+border: 1px solid #000000;
+border-radius: 0px 30px 30px 30px;
+}
+
+.noti3{
+    position: absolute;
+    width:5%;
+    left:984px;
+    top:670px;
+}
