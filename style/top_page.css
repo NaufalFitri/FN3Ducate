@@ -4,11 +4,8 @@ title {
     display: none;
 }
 
-* {
-    background-color: #d2d5da ;   
-}   
-
 body {
+    background-color: #EBECF0;
     margin: 0;
     padding: 0;
 }
@@ -20,6 +17,7 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    height: 80px;
     width: 100%;
     justify-content: space-between;
     box-shadow: 0px 0px 20px -10px;
@@ -34,6 +32,7 @@ body {
     font-size: 15px;
     text-decoration: none;
     color: black;
+    font-size: 2.5vh;
 }
 
 a.active{
@@ -51,7 +50,7 @@ section.btn {
 
 .btn button {
     font-family: "Outfit", sans-serif;
-    font-size: 15px;
+    font-size: 20px;
     background-color: white;
     padding: 3px 20px;
     border: 1px solid black;

@@ -1,6 +1,6 @@
 <?php
 
-include 'top_page.php'
+include 'top_page_student.php'
 
 ?>
 
