@@ -1,6 +1,6 @@
 <?php
 
-include 'top_page_main.php'
+include 'progmega/top_page_main.php'
 
 ?>
 
@@ -15,7 +15,7 @@ include 'top_page_main.php'
     <div class="bg-img-c">
     <img src="resources/image13.png" class="bg-img1">
     </div>
-    <main>
+    <main class="main_main">
         <section class="main_page">
             <div class="welcome">
                 <h1>
@@ -79,64 +79,63 @@ include 'top_page_main.php'
             </div>
             <div class="li-tutors">
                 <div class="aina">
-                    <img src="image17-removebg-preview.png" class="bgbiru1">
-                    <img src="image13-removebg-preview.png" class="kak">
+                    <img src="resources/image17-removebg-preview.png" class="bgbiru1">
+                    <img src="resources/image13-removebg-preview.png" class="kak">
                     <h2>Ms Aina <span>BIOLOGY</span></h2>
                 </div>
                 <div class="fiqi">
                     <button class="kiri">
                     <
                     </button>
-                    <img src="image15-removebg-preview.png" class="bgbiru2">
-                    <img src="image16-removebg-preview.png" class="fiq">
+                    <img src="resources/image15-removebg-preview.png" class="bgbiru2">
+                    <img src="resources/image16-removebg-preview.png" class="fiq">
                     <h2>Sir Izzat <span>ENGLISH</span></h2>
                     <button class="kanan">
                     > 
                     </button>
                 </div>
                 <div class="amy">
-                    <img src="image17-removebg-preview.png" class="bgbiru3">
-                    <img src="image14-removebg-preview.png" class="pen">
+                    <img src="resources/image17-removebg-preview.png" class="bgbiru3">
+                    <img src="resources/image14-removebg-preview.png" class="pen">
                     <h2>Ms Amy <span>PHYSICS</span></h2>
                 </div>
             </div>
             <div class="bintikhi">
-                <img src="image19-removebg-preview.png" class="hi1">
-                <img src="image25-removebg-preview.png" class="hi2">
+                <img src="resources/image19-removebg-preview.png" class="hi1">
+                <img src="resources/image25-removebg-preview.png" class="hi2">
             </div>
-        <section class="meet-team">
+        <section class="meet-team" id="our-teams">
             <div class="meet">
                 <h1>Meet <span>our team</span></h1>
             </div>
             <div class="am">
-                <img src="image27-removebg-preview.png" class="amril">
+                <img src="resources/image27-removebg-preview.png" class="amril">
                 <h3>HICOM</h3>
             </div>
             <div class="afiq">
-                <img src="image31-removebg-preview.png" class="afiqq">
+                <img src="resources/image31-removebg-preview.png" class="afiqq">
                 <h3>Developer</h3>
             </div>
             <div class="oth">
-                <img src="image29-removebg-preview.png" class="othm">
+                <img src="resources/image29-removebg-preview.png" class="othm">
                 <h3>Designer</h3>
             </div>
             <div class="jim">
-                <img src="image33-removebg-preview.png" class="zim">
+                <img src="resources/image33-removebg-preview.png" class="zim">
                 <h3>Analysis & Marketing</h3>
             </div>
         </section>
         <div class="hias">
-            <!-- <img src="image20-removebg-preview.png" class="b1"> -->
-            <img src="image21-removebg-preview.png" class="b2">
-            <img src="image22-removebg-preview.png" class="b3">
-            <img src="image23-removebg-preview.png" class="b4">
-            <img src="image24-removebg-preview.png" class="b5">
-            <img src="image21-removebg-preview.png" class="b6">
+            <img src="resources/image21-removebg-preview.png" class="b2">
+            <img src="resources/image22-removebg-preview.png" class="b3">
+            <img src="resources/image23-removebg-preview.png" class="b4">
+            <img src="resources/image24-removebg-preview.png" class="b5">
+            <img src="resources/image21-removebg-preview.png" class="b6">
         </div>
     </main>
     <div class="bawah">
-        <img src="image34.jpg" class="purple">
-        <img src="image35-removebg-preview.png" class="logoo">
+        <img src="resources/image34.jpg" class="purple">
+        <img src="resources/image35-removebg-preview.png" class="logoo">
         <p class="ayat">
             Copyright © Core Consult Resources (SA0535328-D).<span>All rights reserved. Unauthorized use prohibited.</span>
         </p>

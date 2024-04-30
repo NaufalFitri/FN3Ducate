@@ -6,24 +6,24 @@
     <title>Main Page</title>
     <link rel="stylesheet" href="style/top_page.css">
 </head>
-<body>
-    <header class="main">
+<body class="top">
+    <header class="main-top">
         <section class="top_page">
             <a href="#">  <img class="logo" src="resources/LOGO_FN3.png"></a>
                 <nav>
-                    <a href="#" class="active">Home</a>
+                    <a href="#home" class="active">Home</a>
                     <a href="#about_us" >About us</a>
-                    <a href="#" >Tutors</a>
-                    <a href="#">Our Team</a>
+                    <a href="#tutors" >Tutors</a>
+                    <a href="#our-teams">Our Team</a>
                 </nav>
         </section>
         <section class="btn">
-            <button class="login-btn">
+            <a href="login.php" class="login-btn">
                 Login
-            </button>
-            <button class="rgstr-btn">
+            </a>
+            <a href="signup.php" class="rgstr-btn">
                 Register
-            </button>
+            </a>
         </section>
     </header>
 </body>

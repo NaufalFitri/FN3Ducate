@@ -1,6 +1,6 @@
 <?php 
-	include'top_page.php';
-	include'connection.php';
+	include 'progmega/top_page_student.php';
+	include 'connection.php';
 
 	session_start();
 		$tutor_name = $_SESSION["Tutor_Name"];
@@ -18,7 +18,7 @@
 		}
 		
 		
-		include'subject.php';
+		include 'subject.php';
 			$subject_name = $_GET["Subject_Name"];
 			
 			$subject_name = mysqli_real_escape_string($connection, $subject_name);

@@ -6,6 +6,4 @@
 	
 	$connection = mysqli_connect($host, $user, $password, $database)
 	or die('Connection Failed! Please recheck!');
-	echo "Connection Successful!<br>";
-    
 ?>

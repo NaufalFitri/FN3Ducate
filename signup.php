@@ -1,6 +1,6 @@
 <?php
 	include("connection.php");
-	include("top_page.php");
+	include("progmega/top_page_singup.php");
 	
 	if(isset($_POST["submit"])){
 		$student_id = $_POST["Student_ID"];
@@ -20,7 +20,7 @@
 	}
 ?>
 
-<link rel = "stylesheet" href = "forms.css">
+<link rel = "stylesheet" href = "style/forms.css">
 <link rel = "stylesheet" href = "main.css">
 <link rel = "stylesheet" href = "buttons.css">
 <center>
