@@ -1,0 +1,266 @@
+/* Import fonts from Google Fonts (optional) */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Outfit:wght@100..900&display=swap');
+
+/* Basic styles */
+body {
+  font-family: sans-serif;
+  background-color: #d2d5da;
+  margin: 0;
+  padding-top: 100px;
+}
+
+/* Main container styles (optional) */
+main {
+  gap: 5vh;
+  justify-content: flex-start;
+  height: 100vh;
+  margin: 70px 50px;
+  font-family: "Outfit", sans-serif;
+  border: solid;
+  display: flex; /* Make the main container a flex container */
+  flex-direction: column; /* Arrange elements vertically */
+}
+
+.welcome {
+  padding-top: 100px;
+  padding: 50px;
+  padding-left: 50px;
+  width: 930px;
+  height: 251px;
+  margin-left: 55px;
+  font-size: 30px;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  border-radius: 10px;
+  text-align: left; /* Center text within the element */
+}
+
+.welcome .text{
+  width: 60%;
+  margin-left: 50px;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  color: #44526F;
+}
+
+.welcome h1{
+  font-size: 40px;
+  color: #304062;
+}
+
+.welcome .profile {
+  width: 136px;
+  height: 345px;
+  margin-left: 60px;
+  margin-top: -120px;
+  background-color: #444444;
+  width: 210px;
+  border-radius: 50px;
+  display: flex;
+}
+
+h2, h3, h4 {
+  margin-bottom: 20px; 
+  margin-left: 55px;
+  color: #44526F;
+  font-size: 30px;
+}
+
+.view_1 {
+  display: inline-block; /* Display the element inline but allow line breaks */
+  margin-left: 836px;
+  border-radius: 10px; /* Slightly rounded corners for "View all" links */
+  background-color: white;
+  padding: 5px;
+}
+
+.view_2 {
+  display: inline-block; /* Display the element inline but allow line breaks */
+  margin-left: 817px;
+  border-radius: 10px; /* Slightly rounded corners for "View all" links */
+  background-color: white;
+  padding: 5px;
+}
+
+
+.view_1 a,.view_2 a {
+  text-decoration: none; /* Remove underline from links */
+  color: #000; /* Set text color to black */
+}
+
+.view_1 a:hover,.view_2 a:hover {
+  color: red; /* Change text color to a darker shade on hover */
+}
+h2,.view_1 a {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+h3,.view_2 a {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Subjects and schedules styles */
+.subjects,
+.schedules {
+  margin-left: 55px;
+  display: flex; /* Arrange elements horizontally in a row */
+  flex-wrap: nowrap; /* Prevent elements from wrapping to multiple lines */
+  overflow-x: auto; /* Add horizontal scroll if content overflows */
+  justify-content: space-between; /* Distribute elements evenly with space between */
+  background-color: transparent;
+  width: 1030px; /* Allow content to determine width */
+  height: 157px; /* Set height for subjects and schedules (adjust as needed) */
+  margin-bottom: 20px; /* Add spacing below each element */
+}
+
+.subjects h1,
+.schedules p {
+  font-size: 25px; 
+  color: white;
+}
+
+.subjects img {
+  width: 20px; /* Adjust width as needed */
+  height: 20px; /* Adjust height as needed */
+  margin-right: 10px; /* Add space between image and text */
+  background-color: transparent;
+  float: left;
+}
+
+.subjects .english{
+  width: 210px;
+  border-radius: 5px;
+  padding-left: 15px;
+  color: white;
+ background-image: linear-gradient(to right,#5271C1 10%,#27365B 100%);
+}
+
+.subjects .physics{
+  width: 210px;
+  border-radius: 5px;
+  padding-left: 15px;
+  color: white;
+  background-image: linear-gradient(to right,#7E91C2 20%,#2D3D65 100%);
+}
+
+.subjects .biology{
+  width: 210px;
+  border-radius: 5px;
+  padding-left: 15px;
+  color: white;
+  background-image: linear-gradient(to right, #7E91C2 0%,#BB4872 100%);
+}
+
+.schedules .schedule-1{
+  width: 226px;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+  background-image: linear-gradient(to top, #52ADC1 7%,#8D0F81 87%);
+}
+
+.schedules .schedule-2{
+  width: 226px;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+  background-image: linear-gradient(to top, #C396D9 7%,#8D0F81 87%);
+}
+
+.schedules .schedule-3{
+  width: 226px;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+  background-image: linear-gradient(to left, #52ADC1 7%,#DA6C86 87%);
+}
+
+/* Stacked circles with number styles */
+.subjects div,
+.schedules div {
+  position: relative; /* Enable positioning of child elements (stacked circles) */
+}
+
+.subjects img{
+  display: flex;
+ flex-direction: column;
+}
+
+.circles {
+  width: 120px;
+  height: 10px;
+  margin-left: -10px;
+  background-color: transparent;
+  display: flex; /* Arrange circles in a column */
+  flex-direction: row; /* Stack circles vertically */
+}
+
+.circle {
+  width: 30px; /* Adjust width as needed */
+  height: 30px; /* Adjust height as needed */
+  border: 1px solid black; /* Create a black border with 5px thickness */
+  border-radius: 50%; /* Ensure rounded corners for the border */
+  background-color: #bbb; /* Make background transparent (optional) */
+  display: inline-block; /* Display as inline-block for vertical stacking */
+  align-self: center;
+  color: black;
+}
+
+.circles :nth-child(1){
+  margin-left: 10px;
+}
+
+.circles :nth-child(2) {
+  right: 10px;
+}
+
+.circles :nth-child(3){
+  right: 20px;
+  display: flex; /* Use flexbox for the last circle */
+  justify-content: center; /* Center text horizontally */
+  align-items: center;
+}
+
+.book {
+  width: 60px;
+  margin-left: 55px;
+  border-radius: 5px;
+  padding: 15px;
+  font-weight: bold;
+  color: white;
+  background-image: linear-gradient(to bottom, #354AB6 0%,#AC7FD8 100%);
+}
+
+.book a{
+  text-decoration: none;
+}
+
+.view_1 a:visited,.view_2 a:visited, .book a:visited {
+  color: inherit; 
+}
+
+.logo-footer img{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  max-width: 100%;
+  width: 166px;
+  height: auto;
+  background-color: transparent;
+}
+
+footer{
+  display: flex;
+  background-color: #2D32AA61;
+  color: #2D3D65;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  line-height: 0px;
+  font-size: 12px;
+}
