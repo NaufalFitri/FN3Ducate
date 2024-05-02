@@ -16,9 +16,10 @@
 > 9) Timeslot Allocation Page for Tutors
 
 **Documentation of System:**
-> Server Requirements: MySQL 8.4.0 (phpMyAdmin recommended)
-> Hosting Requirements: localhost or a MySQL based server
->
+> - Server Requirements: MySQL 8.4.0 (phpMyAdmin recommended)
+> - Hosting Requirements: localhost or a MySQL based server
+> - Software Requirements: Internet Browser (Google Chrome / Internet Explorer / Mozilla Firefox)
+>   
 > Manual for Implementation:
 > 1) Download the pre-loaded SQL file
 > 2) Open a new database with the name 'fn3ducate_db'
