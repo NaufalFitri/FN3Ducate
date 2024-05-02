@@ -117,7 +117,8 @@
 				<select name="Allocation_ID" class="dropdown-button">
 				<option value="">Select Timeslot</option>
 				<?php
-					$sql = "SELECT * FROM allocation_db";
+					$sql = "SELECT * FROM allocation_db
+							join timeslot_db on allocation_db.Timeslot_Code = timeslot_db.Timeslot_Code";
 					$data = mysqli_query($connection, $sql);
 					while ($code = mysqli_fetch_array($data)){
 						echo "<option value='$code[Allocation_ID]'>$code[Timeslot]</option>";

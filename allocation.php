@@ -5,10 +5,9 @@
     if (isset($_POST["submit"])){
         $tutor_id = $_POST["Tutor_ID"];
         $timeslot_code = $_POST["Timeslot_Code"];
-        $timeslot = $_POST["Timeslot"];
         $type = $_POST["Type"]; 
         
-        $sql = "INSERT INTO allocation_db (Tutor_ID, Timeslot_Code, Type, Timeslot) VALUES('$tutor_id', '$timeslot_code', '$type', '$timeslot');";
+        $sql = "INSERT INTO allocation_db (Tutor_ID, Timeslot_Code, Type) VALUES('$tutor_id', '$timeslot_code', '$type');";
         $result = mysqli_query($connection, $sql);
         
         if ($result == TRUE){
@@ -42,15 +41,11 @@
                             $sql = "SELECT * FROM timeslot_db";
                             $data = mysqli_query($connection, $sql);
                             while ($code = mysqli_fetch_array($data)){
-                                echo "<option value='$code[Timeslot_Code]'>$code[Timeslot_Code]</option>";
+                                echo "<option value='$code[Timeslot_Code]'>$code[Timeslot]</option>";
                             }
                         ?>
                     </select>
                 </td>
-            </tr>
-            <tr>
-                <td> Time: </td>
-                <td id="timeslot_time"></td>
             </tr>
             <tr>
                 <td> Type of Class: </td>
@@ -70,7 +65,7 @@
 
 <script>
     // Function to fetch and display timeslots based on selected timeslot code
-    document.getElementById('timeslot_code').addEventListener('change', function() {
+    document.getElementById('timeslot_code').addEventListener('change', function()) {
         var selectedCode = this.value;
         var xhr = new XMLHttpRequest();
         xhr.onreadystatechange = function() {
