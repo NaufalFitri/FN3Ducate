@@ -14,7 +14,7 @@
                     <a href="main_page.php#home" class="active">Home</a>
                     <a href="main_page.php#about_us" >About us</a>
                     <a href="main_page.php#tutors" >Tutors</a>
-                    <a href="main_page.php#our-team">Our Team</a>
+                    <a href="main_page.php#our-teams">Our Team</a>
                 </nav>
         </section>
     </header>
