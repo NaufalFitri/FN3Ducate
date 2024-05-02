@@ -1,6 +1,6 @@
 <?php
     include("connection.php");
-    include("top_page.php");
+    include("progmega/top_page_student.php");
 
     if (isset($_POST["submit"])){
         $tutor_id = $_POST["Tutor_ID"];

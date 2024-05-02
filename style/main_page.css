@@ -86,10 +86,12 @@ section.achivements div {
 section.achivements div h1:not(.last){
     border-right: solid;
     padding: 0px 30px;
+    font-size: 45px;
 }
 
 section.achivements div h1.last {
     padding-right: 30px;
+    font-size: 45px;
 }
 section.achivements div h1 {
     background-color: transparent;
@@ -97,7 +99,7 @@ section.achivements div h1 {
 }
 
 section.achivements span {
-    font-size: 20px;
+    font-size: 35px;
     background-color: transparent;
 }
 
@@ -197,11 +199,13 @@ section.achivements span {
 .words1{
     font-family:"Istok Web",sans-serif;
     z-index:3;
-    margin: auto;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 3%;
     width:350px;
     text-align:center;
     overflow-wrap: break-word;
-    font-size: 170%;
+    font-size: 30px;
     font-weight:200;
     color:#5F6271;
     align-content: center;
@@ -219,7 +223,7 @@ section.achivements span {
 .gradhijau {
     position:absolute;
     width:50vh;
-    translate: 0 -15vh;
+    translate: 0 -14vh;
     opacity: 30%;
     z-index: -1;
 }
@@ -231,9 +235,10 @@ section.achivements span {
     translate: 40% 30%;
     width:400px;
     text-align:center;
-    font-size: 170%;
+    font-size: 30px;
     font-weight:200;
     color:#5F6271;
+    overflow-wrap: break-word;
 }
 
 .gradpink{
@@ -248,23 +253,23 @@ section.achivements span {
 
 .k1{
     position:absolute;
-    width:20%;
-    translate: 0% 200%;
+    width:15%;
+    translate: 0 40vh;
     z-index: -1;
 }
 
 .k2{
     position:absolute;
-    width:13%;
+    width:10%;
     opacity: 80%;
-    translate: -50% 620%;
+    translate: -10vh 75vh;
     z-index: -1;
 }
 
 .k3{
     position:absolute;
-    width:15%;
-    translate: 180% 520%;
+    width:13%;
+    translate: 25vh 73vh;
     z-index: -1;
 }
 
@@ -308,7 +313,7 @@ section.tutor {
     width: 80%;
     margin-right: auto;
     margin-left: auto;
-    gap: 5%;
+    gap: 85px;
     font-size: 145%;
 }
 
@@ -365,7 +370,7 @@ section.tutor {
 .tutor .amy .bgbiru3{
     position:absolute;
     width:21vh;
-    translate: -1.5vh -34vh;
+    translate: -2.5vh -34vh;
     z-index: -2;
 }
 
@@ -379,33 +384,30 @@ section.tutor {
 
 .kanan{
     font-family:"Inter", sans-serif;
-    position:absolute;
     width:60px;
     text-align: center;
     cursor:pointer;
     color:white;
-    border:0px;
     background-color:#354ab6;
     border-radius: 300px;
-    left:63%;
+    border: none;
     font-size:50px;
     font-weight:800;
     opacity:0.8;
-    translate: 25% -280%;
+    translate: 20.5vh -25vh;
 }
 
 .kiri{
     font-family:"Inter", sans-serif;
     position:absolute;
     width:60px;
-    translate: -100% -100%;
+    translate: -11vh -25vh;
     text-align: center;
     cursor:pointer;
     color:white;
     border:0px;
     background-color:#354ab6;
     border-radius: 300px;
-    left:32%;
     font-size:50px;
     font-weight:800;
     opacity:0.8;
@@ -573,15 +575,11 @@ section.tutor {
     z-index: 2;
 }
 
-.b1{
-    position:absolute;
-    left:87.99%
-}
-
 .b2{
     position:absolute;
     left:7%;
     width:10%;
+    translate: 0% -30vh;
 }
 
 .b3{
@@ -589,6 +587,8 @@ section.tutor {
     left:41.5%;
     width:7%;
     z-index:0;
+    translate: 0% -20vh;
+
 }
 
 .b4{
@@ -596,6 +596,8 @@ section.tutor {
     left:88.5%;
     width:7%;
     z-index:0;
+    translate: 0% -10vh;
+
 }
 
 .b5{
@@ -603,53 +605,14 @@ section.tutor {
     left:90%;
     width:10%;
     z-index:0;
+    object-fit: cover;
+    translate: 10vh -30vh;
+
 }
 
 .b6{
     position:absolute;
     left:15%;
     width:7%;
-}
-
-.bawah {
-    margin-top: 300px;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-}
-
-.purple{
-    position:absolute;
-    width:100%;
-    height:auto;
-    z-index: -1;
-}
-
-.logoo{
-    width:40%;
-    margin-bottom: 40px;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: -10%;
-}
-
-.ayat{
-    font-family:"Inter", sans-serif;
-    color:#2d3d65;
-    font-size:100%;
-    margin-top: -10%;
-    opacity:0.85;
-    margin-right: auto;
-    margin-left: auto;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.ayat span{
-    font-family:"Inter", sans-serif;
-    color:#2d3d65;
-    align-self: center;
+    translate: 0% -5vh;
 }

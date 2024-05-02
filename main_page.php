@@ -84,12 +84,12 @@ include 'progmega/top_page_main.php'
                     <h2>Ms Aina <span>BIOLOGY</span></h2>
                 </div>
                 <div class="fiqi">
-                    <button class="kiri">
-                    <
-                    </button>
                     <img src="resources/image15-removebg-preview.png" class="bgbiru2">
                     <img src="resources/image16-removebg-preview.png" class="fiq">
                     <h2>Sir Izzat <span>ENGLISH</span></h2>
+                    <button class="kiri">
+                    <
+                    </button>
                     <button class="kanan">
                     > 
                     </button>
@@ -133,12 +133,10 @@ include 'progmega/top_page_main.php'
             <img src="resources/image21-removebg-preview.png" class="b6">
         </div>
     </main>
-    <div class="bawah">
-        <img src="resources/image34.jpg" class="purple">
-        <img src="resources/image35-removebg-preview.png" class="logoo">
-        <p class="ayat">
-            Copyright © Core Consult Resources (SA0535328-D).<span>All rights reserved. Unauthorized use prohibited.</span>
-        </p>
-    </div>
+    <?php
+
+    include ("progmega/footer.php")
+
+    ?>
 </body>
 </html>
